@@ -26,6 +26,18 @@ switch ($_REQUEST['action']) {
 		print $r;
 		break;
 
+	case "formulario":
+		$mensaje=new registro();
+		$r=$bo->retornamns($mensaje);
+		print $r;
+		break;
+
+	case "registra":
+		$registra=new objetohola();
+		$registra->nombre=$_POST['nombre'];
+		$r=$bo->funcionregistra($registra);
+		break;
+
 	default:
 		# code...
 		break;

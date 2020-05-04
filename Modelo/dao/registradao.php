@@ -1,5 +1,6 @@
 <?php
 
+require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/objetos/objetohola.php";
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/registrasql.php";
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/conexion.php";
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/procesaparametros.php";
@@ -7,18 +8,19 @@ require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/procesaparametros
 class registradatosdao{
 	private $con;
 
-	function _construct(){
-		$this->con->close();
+	function __construct(){
+		$this->con=conexion::conectar();
 	}
 
-	function _destruct(){
+	function __destruct(){
 		$this->con->close();
 	}
 
 	function insertadatosdao($modulo){
-		$datosarray=array($modulo->vnombre);
+		$datosarray=($modulo->nombre);
 		$pp=procesaparametros::PrepareStatement(registrasql::fregistradatos(),$datosarray);
 		$query=$this->con->query($pp);
+	    return $query;
 	}
 }
 

@@ -1,0 +1,24 @@
+#formu input[type='text']{
+	border-radius: 10px;
+	font-weight: bold;
+	color: #0B0B61;
+	width: 20%;
+	height: 20px;
+	border-color: #0B0B61;
+	text-indent: 10px;
+}
+
+#formu input[type='submit']{
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: #0B0B61;
+	color: white;
+	width: 10%;
+	height: 30px;
+	cursor: pointer;
+}
+
+#formu{
+	font-weight: bold;
+	font-size: 20px;
+}

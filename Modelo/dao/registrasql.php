@@ -1,12 +1,10 @@
 <?php
 
 class registrasql{
-	function fregistradatos(){
-		$query="insert into nombre(nombre)values(?)";
+	public static function fregistradatos(){
+		$query="insert into nombres(nombre)values(?);";
 		return $query;
 	}
 }
 
-
-//*****************************
 ?>

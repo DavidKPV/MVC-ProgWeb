@@ -29,3 +29,21 @@ function listado(id) {
 		alert(data);
 	});
 }
+
+function formulario(){
+	var datos="action=formulario";
+
+	$.post("../controlador/holacontrol.php", datos, function(data){
+		$('#elementoinicial').html(data);
+	});
+}
+
+function registra(){
+	var datos="action=registra&"+$("#formu").serialize;
+	alert(datos);
+	$.post("../controlador/holacontrol.php", datos, function(data){
+		alert(datos);
+		$('#elementoinicial').prepend(data);
+		alert(data);
+	});
+}

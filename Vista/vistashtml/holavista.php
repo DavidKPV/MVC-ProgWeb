@@ -17,6 +17,17 @@ class holavista {
 		$cad="<h3>MOSTRANDO DESDE LA BASE DE DATOS</h3><br>".$datos->titulo.$cad=$datos->descripcion;
 	    return $cad;
 	}
+
+	function funcionvistaformulario($datos){
+		$cad='
+		<form name="formu" id="formu" method="POST">
+		Nombre: <input type="text" name="nombre">
+		<br><br>
+		<input type="submit" value="Enviar" onclick="registra()">
+		</form>';
+
+		return $cad;
+	}
 }
 
 ?>
