@@ -1,0 +1,32 @@
+body{
+	margin: 0px;
+	background-color: #A9A9F5;
+}
+
+#cajaopciones li{
+	display: inline-block;
+	margin-right: 2%;
+}
+
+#cajaopciones li a{
+	color: white;
+	text-decoration: none;
+}
+
+#cajaopciones li a:hover{
+	color: white;
+	font-size: 20px;
+}
+
+
+#elementoinicial{
+	margin-top: 5%;
+	text-align: center;
+}
+
+#cabecera{
+	padding: 1%;
+	background-color: #0B0B61;
+	position: all;
+}
+

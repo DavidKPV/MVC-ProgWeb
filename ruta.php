@@ -1,7 +1,7 @@
 <?php
 
 class ruta{
-	const ruta = "/PROGRAMACIONWEB/ListadoMVC_DMM";
+	const ruta = "/ListadoMVC_DMM";
 }
 
 ?>

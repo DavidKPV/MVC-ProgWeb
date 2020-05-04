@@ -1,24 +1,31 @@
 <?php
 
 require_once "../ruta.php";
-require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/bo/mensajebo.php";
-require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/objetos/objetomensaje.php";
+require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/bo/holabo.php";
+require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/objetos/objetohola.php";
 
-$bo=new modulohola();
+$bo=new moduloholabo();
 
 switch ($_REQUEST['action']) {
-	case 'mensajeuno':
-		$mensaje=new holaobjeto();
-		$r=$bo->retornamns($mensaje);
+	case "controlhola":
+		$mensaje=new objetohola();
+		$r=$bo->funcionholabo($mensaje);
 		print $r;
 		break;
 
-	case 'registra':
-		$registra=new holaobjeto();
-		$registra->vnombre=$_POST['nombre'];
-		$r=$bo->funcionregistra($registra);
+	case "miimg":
+		$mensaje= new objetohola();
+		$r=$bo->funcionimgbo($mensaje);
+		print $r; 
 		break;
 	
+	case "listado":
+		$modulo= new objetohola();
+		$modulo->id=$_POST['id'];
+		$r=$bo->fclistado($modulo);
+		print $r;
+		break;
+
 	default:
 		# code...
 		break;
