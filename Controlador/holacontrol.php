@@ -33,7 +33,7 @@ switch ($_REQUEST['action']) {
 		break;
 
 	case "registra":
-		$registra=new objetohola();
+		$registra=new registrob();
 		$registra->nombre=$_POST['nombre'];
 		$r=$bo->funcionregistra($registra);
 		break;

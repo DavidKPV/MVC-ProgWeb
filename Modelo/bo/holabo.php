@@ -33,8 +33,8 @@ class moduloholabo{
 		return $this->vista->funcionvistaformulario($r);
 	}
 
-	function funcionregistra($modulo){
-		$mensaje=$this->registro->insertadatosdao($modulo);
+	function funcionregistra($nombre){
+		$mensaje=$this->registro->insertadatosdao($nombre);
 		return $mensaje;
 	}
 }

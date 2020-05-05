@@ -20,7 +20,7 @@ class holavista {
 
 	function funcionvistaformulario($datos){
 		$cad='
-		<form name="formu" id="formu" method="POST">
+		<form name="formu" id="formu">
 		Nombre: <input type="text" name="nombre">
 		<br><br>
 		<input type="submit" value="Enviar" onclick="registra()">

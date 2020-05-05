@@ -39,11 +39,8 @@ function formulario(){
 }
 
 function registra(){
-	var datos="action=registra&"+$("#formu").serialize;
+	var datos="action=registra&"+$("#formu").serialize();
 	alert(datos);
 	$.post("../controlador/holacontrol.php", datos, function(data){
-		alert(datos);
-		$('#elementoinicial').prepend(data);
-		alert(data);
 	});
 }

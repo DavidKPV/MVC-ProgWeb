@@ -4,26 +4,31 @@ class objetohola{
 	var $id;
 	var $titulo;
 	var $descripcion;
-	var $nombre;
 	private $data;
 }
 
 class registro{
-	var $id;
+	var $id=0;
 	var $nombre;
 
 	private $data;
 
-	public function __set($name, $value){
-		$this->data[$name]=$value;
+	public function __set($nombre, $value){
+		$this->data[$nombre]=$value;
 	}
 
-	public function __get($name){
-		if(array_key_exists($name, $this->data)){
-			return $this->data[$name];
+	public function __get($nombre){
+		if(array_key_exists($nombre, $this->data)){
+			return $this->data[$nombre];
 			return null;
 		}
 	}
+}
+
+class registrob{
+	var $nombre;
+
+	private $data;
 }
 
 ?>
