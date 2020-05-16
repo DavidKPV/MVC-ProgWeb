@@ -13,7 +13,7 @@ switch ($_REQUEST['action']) {
 		print $r;
 		break;
 
-	case "registracontactos"
+	case "registracontactos":
 		header("content-type:aplication/json");
 		$formulario=new formulario();
 		$formulario->nombre=$_POST['nombre'];

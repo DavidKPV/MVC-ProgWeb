@@ -2,14 +2,14 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/profesor/profesorsql.php";
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/conexion.php";
-require_once $SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/procesaparametros.php";
+require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/procesaparametros.php";
 
 class profesordao{
 	private $con;
 	private $mensaje;
 
 	function __construct(){
-		$this->con= conexion::conectar();
+		$this->con=conexion::conectar();
 	}
 
 	function __destruct(){

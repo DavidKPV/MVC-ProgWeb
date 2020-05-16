@@ -6,13 +6,11 @@ require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/profesor/profesor
 class formularioregistra{
 	private $dao;
 	private $vista;
-	private $ligicageneral;
+	private $logicageneral;
 
 	function __construct(){
 		$this->dao=new profesordao();
-		$this->vista=new
-
-		vistaformulariobutton();
+		$this->vista=new vistaformulariobutton();
 	}
 
 	function formularioregistra($r){
