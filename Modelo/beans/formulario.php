@@ -1,7 +1,5 @@
 <?php
-
 class formulario{
-
 	var $id;
 	var $nombre;
 	var $mensaje;
@@ -17,7 +15,5 @@ class formulario{
 			return null;
 		}
 	}
-
 }
-
 ?>

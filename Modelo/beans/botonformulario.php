@@ -1,6 +1,5 @@
 <?php
 class formulario{
-
 	var $id;
 	var $nombre;
 	var $mensaje;

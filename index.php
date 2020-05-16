@@ -6,6 +6,5 @@
 	<meta http-equiv="refresh" content="0;URL=vista/index.html">
 </head>
 <body>
-
 </body>
 </html>
