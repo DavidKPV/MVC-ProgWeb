@@ -10,7 +10,7 @@ class vistaformulariobutton {
 	function vistaregistra($datos){
 		$cad='';
 		$cad.='<form name="formcontacto" id="formcontacto">Nombre: <input type="text" name="nombre" id="nombre"><br>';
-		$cad.='<input type="submit" value="Aceptar" onlcick="registraformulario();">';
+		$cad.='<input type="submit" value="Aceptar" onclick="registraformulario();">';
 		$cad.='</form>';
 
 		return $cad;
