@@ -8,9 +8,17 @@ function btnformulariopre(){
 
 function registraformulario(){
 	var datos="action=registracontactos&"+$("#formcontacto").serialize();
-	alert(datos);
+	
 	$.post("../controlador/btncontrol.php", datos, function(data){
 		$('#resultado').prepend(data);
 		alert(data);
+	});
+}
+
+function listadodedatos() {
+	var datos="action=listado";
+
+	$.post("../controlador/btncontrol.php", datos, function(data){
+		$('#resultado').html(data);
 	});
 }

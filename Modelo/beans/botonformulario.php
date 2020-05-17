@@ -18,4 +18,10 @@ class formulario{
 
 }
 
+class objetolistado{
+	var $id;
+	var $nombre;
+	private $data;
+}
+
 ?>

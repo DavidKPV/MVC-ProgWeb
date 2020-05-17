@@ -1,6 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/vista/logicavista/traerformulariobutton.php";
 require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/profesor/profesordao.php";
+require_once $_SERVER['DOCUMENT_ROOT'].ruta::ruta."/modelo/dao/listado/listadao.php";
 
 class formularioregistra{
 	private $dao;
@@ -20,6 +21,22 @@ class formularioregistra{
 		$mensaje=$this->dao->insertar($modulo);
 		return $mensaje;
 	}
+}
+
+class modulodelistado{
+	private $vista;
+	var $dao;
+
+	function __construct(){
+		$this->dao=new mostrarlistadodao();
+		$this->vista= new vistaformulariobutton();
+	}
+
+	function listado(){
+		$objet = $this->dao->conectadaofin();
+		return $this->vista->vistadatos($objet);
+	}
+
 }
 
 ?>
