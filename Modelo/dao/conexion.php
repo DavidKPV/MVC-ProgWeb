@@ -8,11 +8,9 @@ class conexion{
 	private static $bd = "tescha";
 
 	public static function conectar(){
-
 		return mysqli_connect(conexion::$host, conexion::$user, conexion::$pwd, conexion::$bd);
 
 	}
 
 }
-
 ?>
