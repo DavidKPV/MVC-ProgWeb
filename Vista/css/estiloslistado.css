@@ -1,6 +1,10 @@
 body{
 	margin: 0px;
-	background-color: #A9A9F5;
+	background-color: white;
+}
+
+footer{
+	text-align: center;
 }
 
 #cajaopciones li{
@@ -26,6 +30,6 @@ body{
 
 #cabecera{
 	padding: 1%;
-	background-color: #0B0B61;
+	background-color: #B40404;
 	position: all;
 }

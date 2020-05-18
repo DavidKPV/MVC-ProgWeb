@@ -32,8 +32,8 @@ class modulodelistado{
 		$this->vista= new vistaformulariobutton();
 	}
 
-	function listado(){
-		$objet = $this->dao->conectadaofin();
+	function listado($id){
+		$objet = $this->dao->conectadaofin($id);
 		return $this->vista->vistadatos($objet);
 	}
 

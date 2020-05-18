@@ -15,8 +15,8 @@ function registraformulario(){
 	});
 }
 
-function listadodedatos() {
-	var datos="action=listado";
+function listadodedatos($id) {
+	var datos="action=listado&id="+$id;
 
 	$.post("../controlador/btncontrol.php", datos, function(data){
 		$('#resultado').html(data);

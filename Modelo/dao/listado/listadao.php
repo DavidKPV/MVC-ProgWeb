@@ -15,27 +15,15 @@ class mostrarlistadodao{
 	function __destruct(){
 		$this->con->close();
 	}
-/*
-	function obtenercantidad(){
-		$pp=listasql::traerfuncioncantidad();
+
+	function conectadaofin($id){
+		$datosarray=array($id->id);
+		//$pp=listasql::traerfuncionlistado();
+		$pp=procesaparametros::PrepareStatement(listasql::traerfuncionlistado(),$datosarray);
 		$query=$this->con->query($pp);
-		$listas=new objetolistado();
-
 		$row=$query->fetch_array();
-			
-		$listas->id=$row['id'];
-		$listas->nombre=$row['nombre'];
 
-		return $listas;
-	}
-*/
-	function conectadaofin(){
-		$pp=listasql::traerfuncionlistado();
-		$query=$this->con->query($pp);
 		$listas=new objetolistado();
-
-		$row=$query->fetch_array();
-			
 		$listas->id=$row['id'];
 		$listas->nombre=$row['nombre'];
 

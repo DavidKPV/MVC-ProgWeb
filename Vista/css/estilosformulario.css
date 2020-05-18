@@ -1,17 +1,17 @@
 #formu input[type='text']{
 	border-radius: 10px;
 	font-weight: bold;
-	color: #0B0B61;
+	color: #B40404;
 	width: 20%;
 	height: 20px;
-	border-color: #0B0B61;
+	border-color: #B40404;
 	text-indent: 10px;
 }
 
 #formu input[type='submit']{
 	border-radius: 10px;
 	font-weight: bold;
-	background-color: #0B0B61;
+	background-color: #B40404;
 	color: white;
 	width: 10%;
 	height: 30px;
@@ -21,6 +21,6 @@
 #formu{
 	font-weight: bold;
 	font-size: 20px;
-	width: 50%;
-	float: left;
+	width: 100%;
+	text-align: center;
 }

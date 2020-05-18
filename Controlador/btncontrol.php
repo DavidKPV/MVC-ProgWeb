@@ -26,9 +26,9 @@ switch ($_REQUEST['action']) {
 
 	//Caso que muestra los datos de la base de datos
 	case "listado":
-		//$modulo= new objetodelistado();
-		//$modulo->id=$_POST['id'];
-		$r=$bolistado->listado();
+		$modulo= new objetolistado();
+		$modulo->id=$_POST['id'];
+		$r=$bolistado->listado($modulo);
 		print $r;
 		break;
 
